@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+        <html lang="hu">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Elégedettségi kérdőív</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header></header>
+
+            <div class="main">
+                <h1>Elégedettségi kérdőív</h1>
+                <h2>KIFÜ ügyfélbejelentés-kezelés</h2>
+                <p>Köszönjük! Első válaszát rögzítettük. További visszajelzésével kérjük, segítse a munkánkat!</p>
+            </div>
+            <section class="question">
+                <h3>Mennyire volt elégedett az ügyintézéssel?</h3>
+                <div class="response-buttons" data-group="1">
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 1)">
+                            <span class="emoji"><img src="1.png" alt="Alternate Text" /></span>
+                            <span class="label">Nagyon</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 1)">
+                            <span class="emoji"><img src="2.png" alt="Alternate Text" /></span>
+                            <span class="label">Inkább igen</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 1)">
+                            <span class="emoji"><img src="3.png" alt="Alternate Text" /></span>
+                            <span class="label">Inkább nem</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 1)">
+                            <span class="emoji"><img src="4.png" alt="Alternate Text" /></span>
+                            <span class="label">Egyáltalán nem</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question">
+                <h3>Megfelelőnek találta a bejelentésére adott válaszunkat, megoldásunkat?</h3>
+                <div class="response-buttons" data-group="2">
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 2)">
+                            <span class="emoji"><img src="1.png" alt="Alternate Text" /></span>
+                            <span class="label">Nagyon</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 2)">
+                            <span class="emoji"><img src="2.png" alt="Alternate Text" /></span>
+                            <span class="label">Inkább igen</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 2)">
+                            <span class="emoji"><img src="3.png" alt="Alternate Text" /></span>
+                            <span class="label">Inkább nem</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 2)">
+                            <span class="emoji"><img src="4.png" alt="Alternate Text" /></span>
+                            <span class="label">Egyáltalán nem</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question">
+                <h3>Mennyire találta segítőkésznek ügyintézőnk hozzáállását?</h3>
+                <div class="response-buttons" data-group="3">
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 3)">
+                            <span class="emoji"><img src="1.png" alt="Alternate Text" /></span>
+                            <span class="label">Nagyon</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 3)">
+                            <span class="emoji"><img src="2.png" alt="Alternate Text" /></span>
+                            <span class="label">Inkább igen</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 3)">
+                            <span class="emoji"><img src="3.png" alt="Alternate Text" /></span>
+                            <span class="label">Inkább nem</span>
+                        </div>
+                    </div>
+                    <div class="response-option">
+                        <div class="response-box" onclick="selectBox(this, 3)">
+                            <span class="emoji"><img src="4.png" alt="Alternate Text" /></span>
+                            <span class="label">Egyáltalán nem</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question">
+                <h3>Milyen egyéb észrevétele van az ügyintézéssel kapcsolatban?</h3>
+                <textarea rows="4"></textarea>
+            </section>
+
+            <button class="submit-button" onclick="submitForm()">Elküldöm</button>
+
+            <script>
+                function selectBox(element, group) {
+                    let boxes = document.querySelectorAll('.response-buttons[data-group="' + group + '"] .response-box');
+                    boxes.forEach(box => box.classList.remove('selected'));
+
+                    element.classList.add('selected');
+                }
+            </script>
+
+        </body>
+    </html>

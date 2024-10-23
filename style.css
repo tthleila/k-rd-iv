@@ -1,0 +1,133 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e5c1ea;
+    color: white;
+    padding: 40px 0;
+}
+
+.main {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.question {
+    margin: 20px auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+.response-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.response-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.response-box {
+    padding: 20px;
+    border: 2px solid #ADD8E6;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 150px;
+}
+
+    .response-box:hover {
+        border-color: #d3c6fd;
+    }
+
+    .response-box.selected {
+        background-color: #c0adf0;
+        border-color: #d3c6fd;
+    }
+
+.emoji {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+}
+
+.response-box:active {
+    transform: scale(0.98);
+}
+
+section {
+    border: 2px solid #a796c9;
+    width: 800px;
+    padding: 0px 60px 20px 60px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    font-size: 1rem;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6c5887;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+    .submit-button:hover {
+        background-color: #4b375d;
+    }
+
+
+.response-box,
+section {
+    border-color: #4B0082;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
